@@ -1,0 +1,102 @@
+<!doctype html>
+	<head>
+		<title> SoHo Lunch Hour </title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href='hstyles.css'>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	</head>
+	<body> 
+	<div id="sohoBox">
+			<div id="soho"> S<br>O<br>H<br>O </div>
+			<div id="lunchour"> L&#8202U&#8202N&#8202C&#8202 &#8202  &nbsp&#8202O&#8202U&#8202R </div>
+			<div id="colorH">H</div> 
+		</div>
+		<h1> What's for lunch? </h1>
+	
+	<ul id="priceFilters">
+		<div id="price">
+			<li> Price </li>
+			<li>
+				<input type="checkbox" value="one" id="priceOne" />
+				<label for="priceOne"> $ </label>
+			</li>
+			<li>
+				<input type="checkbox" value="two" id="priceTwo" />
+				<label for="priceTwo"> $$ </label>
+			</li>
+			<li>
+				<input type="checkbox" value="three" id="priceThree" />
+				<label for="priceThree"> $$$ </label>
+			</li>
+			<li>
+				<input type="checkbox" value="four" id="priceFour" />
+				<label for="priceFour"> $$$$ </label>
+		</div>
+	</ul>
+	<ul id="cuisineFilters">
+		<div id="cuisine">
+			<li> Cuisine </li> 
+			<li>
+				<input type="checkbox" value="american" id="amer"/>
+				<label for="amer"> American </label>
+			</li>
+			<li>
+				<input type="checkbox" value="newAmerican" id="newA" />
+				<label for="newA"> New American </label>
+			</li>
+			<li>
+				<input type="checkbox" value="italian" id="ital" />
+				<label for="ital"> Italian </label>
+			</li>
+			<li>
+				<input type="checkbox" value="chinese" id="chin" />
+				<label for="chin"> Chinese </label>
+			</li>
+			<li>
+				<input type='checkbox' value='japanese' id='japa' />
+				<label for='japa'> Japanese </label>
+			</li>
+			<li>
+				<input type='checkbox' value='mediterranean' id='medi' />
+				<label for='medi'> Mediterranean </label>
+			</li>
+			<li>
+				<input type='checkbox' value='fusion' id='fusi' />
+				<label for='fusi'> Fusion </label>
+			</li>
+		</div>
+	</ul>
+	<ul id="goodForFilters">
+		<div id="goodFor">
+			<li> Good for </li>
+			<li>
+				<input type="checkbox" value="takeOut" id="to"/>
+				<label for="to"> Take Out </label>
+			</li>
+			<li>
+				<input type='checkbox' value='clientMeeting' id='cm'/>
+				<label for='cm'> Client Meeting </label>
+			</li>
+			<li>
+				<input type='checkbox' value='groupMeal' id='gm' />
+				<label for='gm'> Group Meal </label>
+			</li>
+		</div>
+	</ul>
+
+		<div class="r one newAmerican groupMeal">Delicatessen</div>
+		<div class="r one italian takeOut">Pepe Rosso</div>
+		<div class="r three american clientMeeting">Jane</div>
+	
+	
+		<div id="mapCanvas"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV46HKuc2gJNM8kaDE7IHkN6aofOCtKvQ"></script>
+		<script src="hscript2.js"><!-- // --></script>
+		<noscript>
+		Oh no! Your browser or firewall has disabled JavaScript.
+		</noscript>
+	</body>
+	
+</html> 
