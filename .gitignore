@@ -1,0 +1,4 @@
+*.png
+
+# Excludes Mac OS X folder hidden files
+.DS_Store
