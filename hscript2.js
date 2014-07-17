@@ -26,7 +26,7 @@ function initialize () {
         };
 	var map = new google.maps.Map(document.getElementById("mapCanvas"),
             centerPoint);
-	var markerImage = "Azure.png";
+	var markerImage = "ruby-marker.png";
 	var infoPopup = new google.maps.InfoWindow(), marker, i;
 // Set markers
 	for (var i = 0; i < list.length; i++) {
