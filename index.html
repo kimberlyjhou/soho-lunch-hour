@@ -7,29 +7,27 @@
 	</head>
 	<body> 
 	<div id="sohoBox">
-			<div id="soho"> S<br>O<br>H<br>O </div>
-			<div id="lunchour"> L&#8202U&#8202N&#8202C&#8202 &#8202  &nbsp&#8202O&#8202U&#8202R </div>
-			<div id="colorH">H</div> 
-		</div>
+		<div id="logo"><img src="SoHo-Lunch-Hour-logo.png" alt="SoHo Lunch Hour" width="297" height="207"></div>
+	</div>
 		<h1> What's for lunch? </h1>
 	
 	<ul id="priceFilters">
 		<div id="price">
 			<li> Price </li>
 			<li>
-				<input type="checkbox" value="one" id="priceOne" />
+				<input type="checkbox" name="byPrice" value="one" id="one" />
 				<label for="priceOne"> $ </label>
 			</li>
 			<li>
-				<input type="checkbox" value="two" id="priceTwo" />
+				<input type="checkbox" name="byPrice" value="two" id="two" />
 				<label for="priceTwo"> $$ </label>
 			</li>
 			<li>
-				<input type="checkbox" value="three" id="priceThree" />
+				<input type="checkbox" name="byPrice" value="three" id="three" />
 				<label for="priceThree"> $$$ </label>
 			</li>
 			<li>
-				<input type="checkbox" value="four" id="priceFour" />
+				<input type="checkbox" name="byPrice" value="four" id="four" />
 				<label for="priceFour"> $$$$ </label>
 		</div>
 	</ul>
@@ -37,31 +35,31 @@
 		<div id="cuisine">
 			<li> Cuisine </li> 
 			<li>
-				<input type="checkbox" value="american" id="amer"/>
+				<input type="checkbox" name="byCuisine" value="american" id="american"/>
 				<label for="amer"> American </label>
 			</li>
 			<li>
-				<input type="checkbox" value="newAmerican" id="newA" />
+				<input type="checkbox" name="byCuisine" value="newAmerican" id="newAmerican" />
 				<label for="newA"> New American </label>
 			</li>
 			<li>
-				<input type="checkbox" value="italian" id="ital" />
+				<input type="checkbox" name="byCuisine" value="italian" id="italian" />
 				<label for="ital"> Italian </label>
 			</li>
 			<li>
-				<input type="checkbox" value="chinese" id="chin" />
+				<input type="checkbox" name="byCuisine" value="chinese" id="chinese" />
 				<label for="chin"> Chinese </label>
 			</li>
 			<li>
-				<input type='checkbox' value='japanese' id='japa' />
+				<input type='checkbox' name="byCuisine" value='japanese' id='japanese' />
 				<label for='japa'> Japanese </label>
 			</li>
 			<li>
-				<input type='checkbox' value='mediterranean' id='medi' />
+				<input type='checkbox' name="byCuisine" value='mediterranean' id='mediterranean' />
 				<label for='medi'> Mediterranean </label>
 			</li>
 			<li>
-				<input type='checkbox' value='fusion' id='fusi' />
+				<input type='checkbox' name="byCuisine" value='fusion' id='fusion' />
 				<label for='fusi'> Fusion </label>
 			</li>
 		</div>
@@ -70,25 +68,25 @@
 		<div id="goodFor">
 			<li> Good for </li>
 			<li>
-				<input type="checkbox" value="takeOut" id="to"/>
+				<input type="checkbox" name="byGoodFor" value="takeOut" id="takeOut"/>
 				<label for="to"> Take Out </label>
 			</li>
 			<li>
-				<input type='checkbox' value='clientMeeting' id='cm'/>
+				<input type='checkbox' name="byGoodFor" value='clientMeeting' id='clientMeeting'/>
 				<label for='cm'> Client Meeting </label>
 			</li>
 			<li>
-				<input type='checkbox' value='groupMeal' id='gm' />
+				<input type='checkbox' name="byGoodFor" value='groupMeal' id='groupMeal' />
 				<label for='gm'> Group Meal </label>
 			</li>
 		</div>
 	</ul>
-
-		<div class="r one newAmerican groupMeal">Delicatessen</div>
-		<div class="r one italian takeOut">Pepe Rosso</div>
-		<div class="r three american clientMeeting">Jane</div>
-	
-	
+	<div class="restaurants">
+		<div class="r" data-category=" two newAmerican groupMeal clientMeeting">Delicatessen</div>
+		<div class="r" data-category="one italian takeOut">Pepe Rosso</div>
+		<div class="r" data-category="three american clientMeeting">Jane</div>
+	</div>
+		
 		<div id="mapCanvas"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
