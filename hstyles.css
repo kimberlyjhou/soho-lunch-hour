@@ -1,5 +1,8 @@
 
-p, div, ul {font-family: 'Source Sans Pro', Helvetica, sans-serif;}
+p, div, ul {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-size: 20px;
+	}
 h1 {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	margin-right: 1ex;
@@ -23,12 +26,12 @@ ul {
 	float:left;
 	}
 
-	
+
 #mapCanvas { 
-	margin: 0, auto;
-	padding: 15 px;
-	top: 8em;
-	width: 100%;
+	position: absolute;
+	margin: 0,0;
+	top: 30em;
+	width: 50%;
 	height: 50%; } 
 
 #sohoBox { 
@@ -39,32 +42,12 @@ ul {
 	padding: 0,0;
 	}
 
-#soho {
-	z-index: 2;
-	font-size: 2em;
+#logo {
+	display:none;
 	position: absolute;
-	top: .5ex;
-	left: 8ex;
+	top: 1ex;
+	left: 1ex;
 	}
 	
-#lunchour { 
-	font-size: 2em; 
-	position: absolute;
-	top: 5.7ex;
-	left: 2.7ex;
-	}
-	
-#colorH {
-	z-index: 1;
-	font-size:1.5em;
-	position: absolute;
-	top: 7.7ex;
-	left:10.45ex;
-	border-color: red;
-	border-style: outset;
-	border-width: medium;
-	color: #000;
-	color: rgba(0,0,0,0);
-	padding-left: .3ex;	
-	}
+
 	
