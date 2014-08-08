@@ -2,9 +2,9 @@
 
 
 var list = [
-	['<b> Delicatessen </b> <br> 54 Prince Street', 40.723524, -73.996370, 1],
-	['<b> Pepe Rosso </b> <br> 149 Sullivan Street <br> Great for takeout', 40.727190, -74.001623,1],
-	['<b><a target="_blank" href="http://janerestaurant.com/"> Jane </a></b> <br> ', 40.727306, -74.000281,2],
+	['<div class="rMap">' + '<a target="_blank" href="http://delicatessennyc.com"><div class="links"><b>Delicatessen</b></div></a>' + '54 Prince Street ' + '<br><a target="_blank" href="http://www.yelp.com/biz/delicatessen-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.723472, -73.996333, 1],
+	['<div class="rMap">' + '<a target="_blank" href="http://www.peperossotogo.com/"><div class="links"><b>Pepe Rosso</b></div></a>' + '149 Sullivan Street' + '<br><a target="_blank" href="http://www.yelp.com/biz/pepe-rosso-to-go-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.727190, -74.001623,1],
+	['<div class="rMap">' + '<a target="_blank" href="http://janerestaurant.com/"><div class="links"><b>Jane</b></div></a>' + '100 W Houston Street' + '<br><a target="_blank" href="http://www.yelp.com/biz/jane-new-york-2"><div class="links">Yelp</div></a>' + '</div>', 40.727306, -74.000281,2],
 ];
 
 
