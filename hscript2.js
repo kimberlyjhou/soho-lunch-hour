@@ -1,11 +1,17 @@
-// The data for map - name, coordinates, z-index 
+// The data for map - name, coordinates
 
 
 var list = [
 	['<div class="rMap">' + '<a target="_blank" href="http://delicatessennyc.com"><div class="links"><b>Delicatessen</b></div></a>' + '54 Prince Street ' + '<br><a target="_blank" href="http://www.yelp.com/biz/delicatessen-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.723472, -73.996333, 1],
 	['<div class="rMap">' + '<a target="_blank" href="http://www.peperossotogo.com/"><div class="links"><b>Pepe Rosso</b></div></a>' + '149 Sullivan Street' + '<br><a target="_blank" href="http://www.yelp.com/biz/pepe-rosso-to-go-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.727190, -74.001623,1],
 	['<div class="rMap">' + '<a target="_blank" href="http://janerestaurant.com/"><div class="links"><b>Jane</b></div></a>' + '100 W Houston Street' + '<br><a target="_blank" href="http://www.yelp.com/biz/jane-new-york-2"><div class="links">Yelp</div></a>' + '</div>', 40.727306, -74.000281,2],
-];
+ ['<div class="rMap">' +  '<a target="_blank" href="http://saxonandparole.com/"><div class="links"><b>Saxon + Parole</b></div></a>' + '316 Bowery ' + '<br><a target="_blank" href="http://www.yelp.com/biz/saxon-parole-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.725172, -73.992574],
+ ['<div class="rMap">' +  '<a target="_blank" href="http://www.fivepointsrestaurant.com"><div class="links"><b>Five Points</b></div></a>' + '31 Great Jones St. ' + '<br><a target="_blank" href="http://www.yelp.com/biz/five-points-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.726815, -73.993191],
+ ['<div class="rMap">' +  '<a target="_blank" href="http://www.ilbuco.com/"><div class="links"><b>Il Buco</b></div></a>' + '47 Bond Street ' + '<br><a target="_blank" href="http://www.yelp.com/biz/il-buco-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.725844, -73.992966],
+ ['<div class="rMap">' +  '<a target="_blank" href="http://barprimi.com/"><div class="links"><b>Bar Primi</b></div></a>' + '325 Bowery ' + '<br><a target="_blank" href="http://www.yelp.com/biz/bar-primi-new-york-3"><div class="links">Yelp</div></a>' + '</div>', 40.725675, -73.991813],
+ ['<div class="rMap">' +  '<a target="_blank" href="http://www.davidburkekitchennyc.com/"><div class="links"><b>David Burke Kitchen</b></div></a>' + '23 Grand Street ' + '<br><a target="_blank" href="http://www.yelp.com/biz/david-burke-kitchen-new-york"><div class="links">Yelp</div></a>' + '</div>', 40.722785, -74.004925],
+
+	];
 
 
 // Enter SoHo Lunch Hour
@@ -39,6 +45,7 @@ function initialize () {
 				infoPopup.open(map, marker);
 				}
 			}) (marker, i));
+		
 	}	
 	
 }		
@@ -141,19 +148,22 @@ var price = [], cuisine = [], goodFor = [];
 			
 				if (cselector === '' && gselector === '') {			
 					$('.restaurants > div').filter(selector).fadeIn(500);
+					
 				} else if (cselector === '') {
 					$('.restaurants > div').filter(selector).filter(gselector).fadeIn(500);
+					
 				} else if (gselector === '') {
 					$('.restaurants > div').filter(selector).filter(cselector).fadeIn(500);
+					
 				} else {
 					$('.restaurants > div').filter(selector).filter(cselector).filter(gselector).fadeIn(500);
+					
 				}
 				
 			} else {
 				$lis.fadeIn(500);
+				
 			}	
-								  
-			
 	
 		});
 		
@@ -169,6 +179,7 @@ var price = [], cuisine = [], goodFor = [];
 		}
 
 }
+
 
 $(document).ready(function() {
 	sohoLunchour();
