@@ -1,8 +1,15 @@
 
-p, div, ul {
+p, ul {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	font-size: 20px;
 	}
+	
+
+a:visited { color: #4c4cff; }
+a {
+ text-decoration: none;
+ }
+
 h1 {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
 	margin-right: 1ex;
@@ -18,35 +25,84 @@ ul {
     margin-top: 10em;
 }
 .r {
-	margin-left: 30em;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	/* margin-left: 30em;*/
 	display:none;
-	}
-	
-#cuisine, #price, #goodFor {
-	float:left;
+	position: relative;
 	}
 
+.rMap{
+	font-size: 16px;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	}
+	
+.links {
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	-ms-transition: opacity .3s ease-in-out;
+	-o-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+
+.links:hover{
+	zoom:1;
+	filter: alpha(opacity=60);
+	opacity: 0.6;
+	}
+
+.restaurants {
+		position: absolute;
+		margin-top: 117px;
+		margin-left: 40em;
+		}
+	
+#cuisine, #price, #goodFor {
+	position:relative;
+	margin-top: 90px;
+	float:left;
+	padding-right: 30px;
+	}
+	
+#price {
+	margin-left: 10%;
+	}
+	
+.liTitles {
+	font-size: 22px;
+	}
+	
 
 #mapCanvas { 
 	position: absolute;
-	margin: 0,0;
-	top: 30em;
-	width: 50%;
-	height: 50%; } 
+	top: 40em;
+	width: 900px;
+	height: 550px;
+	left: 50%;
+	margin-left: -450px;
+	margin-bottom: 5em;
+	} 
 
-#sohoBox { 
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+#map_canvas img {
+	max-width:none;
+	
+	}
+	
+#footer {
 	position: relative;
-	top: 0.1 em;
-	right: 0.1 em;
-	padding: 0,0;
+	text-align: center;
+	margin-top: 560px;
 	}
 
 #logo {
+	margin: 0, auto;
 	display:none;
 	position: absolute;
-	top: 1ex;
-	left: 1ex;
+	top: 2ex;
+	left: 50%;
+	margin-left: -155px;
 	}
 	
 
